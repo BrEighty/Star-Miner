@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/starminer1"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Hello World!"
+        android:textColor="#8AAB0F"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.133" />
+
+    <Button
+        android:id="@+id/minebutton"
+        android:layout_width="120dp"
+        android:layout_height="88dp"
+        android:layout_marginBottom="220dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="sans-serif-black"
+        android:text="Mine"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.838"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/UpgradeButton"
+        android:layout_width="120dp"
+        android:layout_height="88dp"
+        android:layout_marginBottom="220dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="sans-serif-black"
+        android:text="Upgrade"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.158"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Reset"
+        android:layout_width="95dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="72dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="sans-serif-black"
+        android:text="Reset"
+        android:textSize="16sp"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/UpgradeCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="313dp"
+        android:fontFamily="sans-serif-black"
+        android:text="First Upgrade: 10"
+        android:textColor="#8AAB0F"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Counter" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
