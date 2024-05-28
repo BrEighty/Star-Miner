@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ClickerGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="starminer1" translatesAutoresizingMaskIntoConstraints="NO" id="XBP-gn-Bws" userLabel="backgroundImageView">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="393" id="Y66-T9-2k9"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="-368.69999999999999" id="kda-3v-PMe"/>
+                                    <constraint firstAttribute="height" constant="852" id="rSU-Fx-Oj3"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpb-Xf-7zZ" userLabel="resetButton">
+                                <rect key="frame" x="162.33333333333334" y="712.66666666666663" width="67.333333333333343" height="34.333333333333371"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Reset"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Next Upgrade: 10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="LkZ-8Q-uY5" userLabel="upgradeCostLabel">
+                                <rect key="frame" x="141" y="444" width="132.66666666666663" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.57121956350000003" green="0.6706275344" blue="0.2155461907" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rocks Mined: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IzO-eV-FGI" userLabel="scoreLabel">
+                                <rect key="frame" x="97" y="133" width="199" height="20.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.57121956350000003" green="0.6706275344" blue="0.2155461907" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XYK-UH-UPM" userLabel="mineButton">
+                                <rect key="frame" x="263" y="518" width="61" height="95"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Mine"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QdQ-tL-1E8" userLabel="upgradeButton">
+                                <rect key="frame" x="57" y="518" width="90.333333333333314" height="88.333333333333371"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Upgrade"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="scrollViewTexturedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QdQ-tL-1E8" firstAttribute="top" secondItem="LkZ-8Q-uY5" secondAttribute="bottom" constant="53.666666666666686" id="9it-Jf-ZPd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XYK-UH-UPM" secondAttribute="trailing" constant="69" id="Byc-13-iEh"/>
+                            <constraint firstItem="IzO-eV-FGI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="74" id="Crz-uP-Wh7"/>
+                            <constraint firstItem="XBP-gn-Bws" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="GcG-eU-lA8"/>
+                            <constraint firstItem="XYK-UH-UPM" firstAttribute="top" secondItem="QdQ-tL-1E8" secondAttribute="top" id="KBY-WP-DBR"/>
+                            <constraint firstItem="XYK-UH-UPM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="QdQ-tL-1E8" secondAttribute="trailing" constant="8" symbolic="YES" id="SZj-ZU-caT"/>
+                            <constraint firstItem="LkZ-8Q-uY5" firstAttribute="centerX" secondItem="cpb-Xf-7zZ" secondAttribute="centerX" constant="11.333333333333314" id="WKK-S7-hYx"/>
+                            <constraint firstItem="QdQ-tL-1E8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="57" id="WaV-Ii-s3n"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QdQ-tL-1E8" secondAttribute="bottom" constant="211.66666666666663" id="YO2-4V-4Ot"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XYK-UH-UPM" secondAttribute="bottom" constant="205" id="e9O-Js-m7q"/>
+                            <constraint firstItem="XBP-gn-Bws" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fO4-xE-fzA"/>
+                            <constraint firstItem="IzO-eV-FGI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="97" id="pQs-0e-o7r"/>
+                            <constraint firstAttribute="bottom" secondItem="cpb-Xf-7zZ" secondAttribute="bottom" constant="105" id="tCA-xA-zaT"/>
+                            <constraint firstItem="cpb-Xf-7zZ" firstAttribute="top" secondItem="LkZ-8Q-uY5" secondAttribute="bottom" constant="248.33333333333331" id="tqS-tg-4vb"/>
+                            <constraint firstItem="LkZ-8Q-uY5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="10.833333333333314" id="vPl-hr-Vka"/>
+                            <constraint firstItem="LkZ-8Q-uY5" firstAttribute="centerX" secondItem="IzO-eV-FGI" secondAttribute="centerX" constant="10.833333333333314" id="w1b-rS-NiU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="XBP-gn-Bws" id="hib-q0-F32"/>
+                        <outlet property="mineButton" destination="XYK-UH-UPM" id="Ymm-0o-ADm"/>
+                        <outlet property="resetButton" destination="cpb-Xf-7zZ" id="JCR-US-Nvl"/>
+                        <outlet property="scoreLabel" destination="IzO-eV-FGI" id="uYx-YT-Fkc"/>
+                        <outlet property="upgradeButton" destination="QdQ-tL-1E8" id="kUX-4q-pwo"/>
+                        <outlet property="upgradeCostLabel" destination="LkZ-8Q-uY5" id="Fga-d8-qGM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="35.877862595419849" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="starminer1" width="320" height="640"/>
+        <systemColor name="scrollViewTexturedBackgroundColor">
+            <color red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
